@@ -1,0 +1,243 @@
+html {}
+
+.wrapper {
+    max-width: 100%;
+}
+
+.header {
+    background-color: #44612d;
+    /* Replace with your desired color */
+    color: pink;
+    /* Replace with your desired color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 150px;
+    margin-right: 5rem;
+
+}
+
+.menu {
+    position: relative;
+    transition: opacity 0.6s ease;
+
+    .svg-icon {
+
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+}
+
+.container:hover> :not(:hover) {
+    opacity: 0.4;
+}
+
+/* Style your navigation links */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a:after {
+    height: 1px;
+    left: 10%;
+    top: 50%;
+    margin-top: 20px;
+    width: 80%;
+    background: #ffffff;
+}
+
+.menu li a:hover::after {
+    background: #ffffff;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.menu li a:hover {
+    border-bottom: 3px solid white;
+}
+
+.introimage {
+    max-width: 100%;
+}
+
+
+.wrapper {
+    footer {
+        background-color: #152331;
+        color: rgb(168, 167, 167);
+
+        .border {
+            border-top-color: rgba(231, 228, 228, 0.1);
+
+            .container {
+                padding: 50px;
+                text-align: center;
+            }
+        }
+    }
+
+    dropdown-content {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    /* .menu>ul>li> {
+        position: relative;
+    }
+
+    .menu ul ul {
+        position: absolute;
+        display: none;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        border-radius: 3px;
+        width: 200px;
+        background-color: white;
+        box-shadow: 0 0 1 pixel gray;
+    }
+
+    .menu ul ul a {
+        display: block;
+        line-height: 30px;
+        color: black;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-size: larger;
+        padding: 0 10px;
+    }
+
+    .menu>ul>li:hover>ul {
+        display: block
+    }
+
+    .menu ul ul a:hover {
+        background-color: black;
+        color: white;
+    } */
+    .desc {
+        text-align: center;
+
+    }
+
+    .item-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+
+        .image-wrapper {
+            width: 100%;
+            margin-right: 2rem;
+
+            border: 2px solid wheat;
+            border-radius: 2px;
+        }
+
+        .desc {
+            font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+            text-align: left;
+            width: 100%;
+
+            .desc-detail {
+                p {
+                    span {
+                        font-weight: bold;
+                    }
+
+                    margin: 0 0 15px;
+                    line-height: 20px;
+                }
+            }
+
+            .btn-group {
+                display: flex;
+
+                .quantity {
+                    display: flex;
+                    flex-shrink: 0;
+                    position: relative;
+                    border: 1px solid gray;
+
+                }
+
+                .cart button {
+                    border: 1px solid black;
+                    outline: 0;
+                    padding: 12px;
+                    color: white;
+                    background-color: #000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;
+                }
+
+                .cart button:hover {
+                    opacity: 0.9;
+                    background-color: white;
+                    color: black
+                }
+
+
+            }
+
+            input {
+                /* width: 100%;
+                margin: 0;
+                border-width: 1px !important;
+                padding: 5px !important;
+                font-weight: 700;
+                -webkit-appearance: none;
+                webkit-appearance: textfield;
+                -moz-appearance: textfield;
+                appearance: textfield */
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+
+            }
+        }
+
+    }
+
+    h3 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        font-weight: bolder;
+    }
+
+    .price {
+        color: #bf8f45;
+        float: none;
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+}
